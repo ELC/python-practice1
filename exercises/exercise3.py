@@ -31,7 +31,7 @@ modelo_de_auto = 1998
 
 # COMPLETAR - FIN
 
-assert comparar_nombre_y_edad
+assert comparar_marca_y_modelo
 
 
 """
