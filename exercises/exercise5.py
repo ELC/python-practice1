@@ -6,12 +6,15 @@ Formatear las siguientes variables de tipo string en un único string.
 Restricción: Utilizar el operador +.
 """
 
+from logging.config import valid_ident
+
+
 variable_01 = "¡Buenos "
 variable_02 = "días "
 variable_03 = "a todos!"
 
 # COMPLETAR - INICIO
-
+strings_concatenados = variable_01 + variable_02 + variable_03
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Buenos días a todos!"
@@ -28,7 +31,7 @@ usar operadores).
 # "strings!"
 
 # COMPLETAR - INICIO
-
+strings_concatenados = "¡Mamá estoy concatenando strings!"
 # COMPLETAR - FIN
 
 assert strings_concatenados == "¡Mamá estoy concatenando strings!"
@@ -45,7 +48,7 @@ variable_02 = 600
 variable_03 = " pesos a un amigo."
 
 # COMPLETAR - INICIO
-
+strings_concatenados = variable_01 + str(variable_02) + variable_03
 # COMPLETAR - FIN
 
 assert strings_concatenados == "Le debo 600 pesos a un amigo."
@@ -83,7 +86,7 @@ variable_03 = " pesos que le debía a Ezequiel, me faltan $"
 variable_04 = 4
 
 # COMPLETAR - INICIO
-
+strings_concatenados = f'{variable_01}{variable_02}{variable_03}{variable_04}'
 # COMPLETAR - FIN
 
 assert strings_concatenados == "Le pagué 2 pesos que le debía a Ezequiel, me faltan $4"

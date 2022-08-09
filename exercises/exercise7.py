@@ -9,7 +9,7 @@ y en el mismo orden.
 lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
-
+tupla=tuple(lista)
 # COMPLETAR - FIN
 
 assert tupla == ("casa", "perro", "pato", "gato")
