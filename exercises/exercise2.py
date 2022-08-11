@@ -10,7 +10,7 @@ esta_lloviendo = True
 riego_activado = True
 
 # COMPLETAR - INICIO
-
+piso_mojado = esta_lloviendo or riego_activado
 # COMPLETAR - FIN
 
 assert piso_mojado
@@ -26,7 +26,7 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-
+area_mayor_a_cinco = not (area_cuadrado < lado_cuadrado)
 # COMPLETAR - FIN
 
 assert area_mayor_a_cinco
@@ -41,7 +41,7 @@ numero_1 = 49
 numero_2 = 50
 
 # COMPLETAR - INICIO
-
+resultado = (numero_1 % 7) == 0 and (numero_2 % 7) != 0
 # COMPLETAR - FIN
 
 assert resultado
@@ -55,11 +55,20 @@ Restricción: sólo usar OR, NOT y el mecanismo de cortocircuito.
 
 variable_01 = False
 variable_02 = True
-variable_03 = 80
-variable_04 = "90"
+variable_03 = 80   
+variable_04 = "90" #True
 variable_05 = 100
 
 # COMPLETAR - INICIO
+
+# Usando and si todos los valores son True se devuelve el ultimo valor evaluado como True
+resultado =  not variable_01 and variable_02 and variable_04 and variable_05 and variable_03
+
+#Usando and si hay un valor False, hay cortocircuito devuelve el valor False donde corta (No me da 80)
+# resultado = variable_01 and variable_02 and variable_04 and variable_05 and variable_03
+
+#Usando or si hay un valor True, hay cortocircuito develve el valor True donde corta
+# resultado = variable_03 or variable_01 or variable_02 or variable_04 or variable_05
 
 # COMPLETAR - FIN
 
