@@ -21,6 +21,7 @@ print(comparar_nombre_y_edad)
 assert comparar_nombre_y_edad
 
 
+
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
 True si un auto no es de marca Ford y su modelo es igual o anterior al año 2000.
@@ -74,7 +75,7 @@ manzanas = 300
 peras = 30
 
 # COMPLETAR - INICIO
-comparar_frutas = (bananas < 200) and (200 < 600) and (600 <= peras**2)
+comparar_frutas = (bananas < naranjas /2 ) and (naranjas /2 < manzanas **2) and (manzanas*2 <= peras**2)
 print(comparar_frutas)
 # COMPLETAR - FIN
 
