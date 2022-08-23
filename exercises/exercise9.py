@@ -11,6 +11,10 @@ numero_2 = 2
 numero_3 = 3
 
 # COMPLETAR - INICIO
+conjunto_1=set()
+conjunto_1.add(numero_1)
+conjunto_1.add(numero_2)
+conjunto_1.add(numero_3)
 
 # COMPLETAR - FIN
 
