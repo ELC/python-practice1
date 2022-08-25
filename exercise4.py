@@ -11,7 +11,7 @@ numero_03 = "789"
 numero_04 = "132"
 
 # COMPLETAR - INICIO
-
+suma_de_numeros=ord(numero_01)+ord(numero_02)+ord(numero_03)+ord(numero_04)
 # COMPLETAR - FIN
 
 assert suma_de_numeros == 1500
@@ -26,7 +26,7 @@ numero_02 = 456
 numero_03 = 789
 
 # COMPLETAR - INICIO
-
+suma_de_numeros_string =chr(numero_01) +chr(numero_02) +chr(numero_03) +chr(numero_04)
 # COMPLETAR - FIN
 
 assert suma_de_numeros_string == "123456789"
@@ -42,7 +42,7 @@ numero_octal = "0o1425"
 numero_hexadecimal = "0x6f540"
 
 # COMPLETAR - INICIO
-
+multiplicacion_de_numeros=int(numero_binario)+ int(numero_octal)+int(numero_hexadecimal)
 # COMPLETAR - FIN
 
 assert multiplicacion_de_numeros == 44397345600000000
@@ -59,6 +59,7 @@ numero_03 = "0o1234"
 numero_04 = 654
 
 # COMPLETAR - INICIO
+resultado_resta =int(numero_01) - int(numero_02,16) - int(numero_03,8)- numero_04
 
 # COMPLETAR - FIN
 

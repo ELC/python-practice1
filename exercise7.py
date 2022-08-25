@@ -6,10 +6,14 @@ A partir de ls siguiente lista instanciar una tupla que contenga todos sus valor
 y en el mismo orden.
 """
 
+from pytz import utc
+from regex import B
+
+
 lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
-
+tupla= tuple(lista)
 # COMPLETAR - FIN
 
 assert tupla == ("casa", "perro", "pato", "gato")
@@ -23,7 +27,8 @@ y en el mismo orden.
 tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
-
+lista= tupla
+print(lista)
 # COMPLETAR - FIN
 
 assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
@@ -36,7 +41,10 @@ Desempaquetar la siguiente tupla en las variables a, b y c
 tupla = ("primer", 25, [1, 2, 3])
 
 # COMPLETAR - INICIO
-
+a= tupla[0]
+b= tupla[1]
+c= tupla[2]
+# tambien podria ser a,b,c = tupla
 # COMPLETAR - FIN
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
@@ -49,10 +57,21 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
+a = tupla[0]
+b = tupla[1]
+c= tupla[2]
+d = tupla[3]
+e = tupla[4]
+f = tupla[5]
+lista=[a,b,c,d,e,f]
+total=sum(lista)
+print(total)
+#total= sum(lista(tupla))
 
 # COMPLETAR - FIN
 
 assert total == 300
+
 
 
 """
@@ -63,7 +82,14 @@ Restricción: Utilizar f-Strings.
 lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
-
+a=lista[0]
+b=lista[1]
+c=lista[2]
+d=lista[3]
+e=lista[4]
+string_concatenado = (f"{a} {b} {c} {d} {e}")
+# o bien a,b,c,d,e = ["esta", "mañana", "sali", "a", "correr"] es tambien desempaquetamiento
+print(string_concatenado)
 # COMPLETAR - FIN
 
 assert string_concatenado == "esta mañana sali a correr"
@@ -77,7 +103,7 @@ Restricción: Utilizar desempaquetado con comodines
 tupla = (73, 45, 344, 3434, 2)
 
 # COMPLETAR - INICIO
-
+primer,*resto=(73, 45, 344, 3434, 2)
 # COMPLETAR - FIN
 
 assert primer == 73
@@ -91,7 +117,9 @@ Restricción: Utilizar desempaquetado con comodines
 lista = [73, 45, 344, 3434, 2]
 
 # COMPLETAR - INICIO
-
+primer,*med,ult=[73, 45, 344, 3434, 2]
+suma= primer+ult
+#print(suma)
 # COMPLETAR - FIN
 
 assert suma == 75
@@ -106,7 +134,10 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
 # COMPLETAR - INICIO
+pri,seg,ter,cuar,quin,*otros = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
+string_concatenado = (f"{pri} {seg} {ter} {cuar} {quin}")
+print(string_concatenado)
 # COMPLETAR - FIN
 
 assert string_concatenado == "anoche fui a la fiesta"
