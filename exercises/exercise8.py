@@ -10,6 +10,15 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
+from optparse import Values
+from typing import KeysView
+
+
+Cliente={ "Nombre": "Mario Pedernera",
+        "DNI": 56895632,
+        "Domicilio": "Los alamos 4509",
+        "Compras": ["cafetera", "TV 50 pulgadas", "mouse gamer"]
+        }
 
 # COMPLETAR - FIN
 
@@ -29,7 +38,10 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 """
 
 # COMPLETAR - INICIO
-
+Compras={ "Mario Pedernera" : ["cafetera", "TV 50 pulgads", "mouse gamer"],
+        "Ezequiel Castello" : ["ipad", "ipod", "iphone"],
+        "Pablo Piristrelli" : ["Reproductor de CD", "Videograbadora"]
+}
 # COMPLETAR - FIN
 
 assert (
@@ -52,7 +64,7 @@ diccionario = {
 }
 
 # COMPLETAR - INICIO
-
+clave1=diccionario.get("clave1")
 # COMPLETAR - FIN
 
 assert clave1 == 234
@@ -72,7 +84,8 @@ diccionario_2 = {
 }
 
 # COMPLETAR - INICIO
-
+clave5=diccionario_2.get("clave5",5)
+print(clave5)
 # COMPLETAR - FIN
 
 assert clave5 == 5
@@ -90,7 +103,7 @@ diccionario_3 = {
 }
 
 # COMPLETAR - INICIO
-
+keys=list(diccionario_3.keys())
 # COMPLETAR - FIN
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
@@ -108,7 +121,7 @@ diccionario_4 = {
 }
 
 # COMPLETAR - INICIO
-
+values=list(diccionario_4.values())
 # COMPLETAR - FIN
 
 assert values == [1234, 4567, 8910, 1112]
@@ -127,7 +140,7 @@ diccionario_5 = {
 }
 
 # COMPLETAR - INICIO
-
+items=list(diccionario_5.items())
 # COMPLETAR - FIN
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
@@ -152,7 +165,7 @@ diccionario_7 = {
 }
 
 # COMPLETAR - INICIO
-
+diccionario_6.update(diccionario_7)
 # COMPLETAR - FIN
 
 assert diccionario_6 == {1: 1111, 2: 2223, 3: 3334, 4: 4444, 5: 5555, 6: 6666}
