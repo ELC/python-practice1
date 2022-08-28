@@ -11,11 +11,11 @@ edad_01 = 24
 persona_02 = "Kevin"
 edad_02 = 41
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+comparar_nombre_y_edad=persona_01 = persona_02 and edad_01 != edad_02
 
 assert comparar_nombre_y_edad
+
+print (comparar_nombre_y_edad)
 
 
 """
@@ -27,11 +27,11 @@ Aclaración: Se puede utilizar and, or y not.
 marca_del_auto = "Chevrolet"
 modelo_de_auto = 1998
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+comparar_marca_y_modelo = (modelo_de_auto <= 2000 and marca_del_auto!="Ford")
 
 assert comparar_marca_y_modelo
+
+print(comparar_marca_y_modelo)
 
 
 """
@@ -45,11 +45,12 @@ superficie_de_campo_01 = 85121
 superficie_de_campo_02 = 851212
 superficie_de_campo_03 = 8512
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+comparar_superficie = superficie_de_campo_01 < superficie_de_campo_02  and superficie_de_campo_02 > superficie_de_campo_03
 
 assert comparar_superficie
+
+print(comparar_superficie)
+
 
 
 """
@@ -65,8 +66,8 @@ naranjas = 400
 manzanas = 300
 peras = 30
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+comparar_frutas=bananas<(naranjas/2)<(manzanas*2)<=(peras**2)
 
 assert comparar_frutas
+
+print (comparar_frutas)

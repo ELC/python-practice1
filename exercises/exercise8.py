@@ -9,9 +9,12 @@ Definir un diccionario para un 'Cliente' que contenga los siguiente valores:
 - Clave "Compras", valor de tipo lista: ["cafetera", "TV 50 pulgadas", "mouse gamer"]
 """
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+Cliente= {
+    "Nombre":"Mario Pedernera",
+    "DNI":56895632,
+    "Domicilio":"Los alamos 4509",
+    "Compras":["cafetera", "TV 50 pulgadas", "mouse gamer"]
+}
 
 assert (
     (Cliente["Nombre"] == "Mario Pedernera")
@@ -19,6 +22,8 @@ assert (
     and (Cliente["Domicilio"] == "Los alamos 4509")
     and (Cliente["Compras"] == ["cafetera", "TV 50 pulgadas", "mouse gamer"])
 )
+
+print (Cliente)
 
 
 """
@@ -28,9 +33,12 @@ Definir un diccionario para las 'Compras' que contenga los siguiente valores:
 - Clave "Pablo Piristrelli", valor de tipo lista: ["Reproductor de CD", "Videograbadora"]
 """
 
-# COMPLETAR - INICIO
+Compras={
+    "Mario Pedernera":["cafetera", "TV 50 pulgads", "mouse gamer"],
+    "Ezequiel Castello":["ipad", "ipod", "iphone"],
+    "Pablo Piristrelli":["Reproductor de CD", "Videograbadora"]
+}
 
-# COMPLETAR - FIN
 
 assert (
     (Compras["Mario Pedernera"] == ["cafetera", "TV 50 pulgads", "mouse gamer"])
@@ -38,6 +46,8 @@ assert (
     and (Compras["Pablo Piristrelli"] == ["Reproductor de CD", "Videograbadora"])
 )
 
+
+print (Compras)
 
 """
 Dado el siguiente diccionario obtener el valor de la "clave1" utilizando el metodo get y
@@ -51,11 +61,11 @@ diccionario = {
     "clave4": [1, 2, 3, 4],
 }
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+clave1 = diccionario.get("clave1")
 
 assert clave1 == 234
+
+print (clave1)
 
 
 """
@@ -71,11 +81,12 @@ diccionario_2 = {
     "clave4": [1, 2, 3, 4, 5, 6],
 }
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+clave5 =(diccionario_2.get('clave4'))
+clave5 = clave5[4]
 
 assert clave5 == 5
+
+print (clave5)
 
 
 """
@@ -89,11 +100,11 @@ diccionario_3 = {
     "clave4": [1, 2, 3, 4],
 }
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+keys = list(diccionario_3.keys())
 
 assert keys == ["clave1", "clave2", "clave3", "clave4"]
+
+print (keys)
 
 
 """
@@ -107,11 +118,11 @@ diccionario_4 = {
     "clave4": 1112,
 }
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+values = list(diccionario_4.values())
 
 assert values == [1234, 4567, 8910, 1112]
+
+print (values)
 
 
 """
@@ -126,11 +137,11 @@ diccionario_5 = {
     4: 4444,
 }
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+items = list(diccionario_5.items())
 
 assert items == [(1, 1111), (2, 2222), (3, 3333), (4, 4444)]
+
+print (items)
 
 
 """
@@ -151,8 +162,9 @@ diccionario_7 = {
     6: 6666,
 }
 
-# COMPLETAR - INICIO
+diccionario_6.update(diccionario_7)
 
-# COMPLETAR - FIN
 
 assert diccionario_6 == {1: 1111, 2: 2223, 3: 3334, 4: 4444, 5: 5555, 6: 6666}
+
+print (diccionario_6)
