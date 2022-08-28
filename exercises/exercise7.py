@@ -8,11 +8,11 @@ y en el mismo orden.
 
 lista = ["casa", "perro", "pato", "gato"]
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+tupla = tuple(lista)
 
 assert tupla == ("casa", "perro", "pato", "gato")
+
+print (tupla)
 
 
 """
@@ -22,12 +22,11 @@ y en el mismo orden.
 
 tupla = "casa", "perro", "pato", "gato", "tenedor"
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+lista = list(tupla)
 
 assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
 
+print (lista)
 
 """
 Desempaquetar la siguiente tupla en las variables a, b y c
@@ -35,11 +34,11 @@ Desempaquetar la siguiente tupla en las variables a, b y c
 
 tupla = ("primer", 25, [1, 2, 3])
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+a,b,c = ("primer",25, [1,2,3])
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
+
+
 
 
 """
@@ -48,11 +47,12 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 
 tupla = (87, 98, 35, 67, 4, 9)
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+a,b,c,d,e,f = (87,98,35,67,4,9)
+total = 87 + 98 + 35 + 67 + 4 + 9
 
 assert total == 300
+
+print (total)
 
 
 """
@@ -62,11 +62,12 @@ Restricción: Utilizar f-Strings.
 
 lista = ["esta", "mañana", "sali", "a", "correr"]
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+a,b,c,d,e = lista
+string_concatenado = f"{a} {b} {c} {d} {e}"
 
 assert string_concatenado == "esta mañana sali a correr"
+
+print (string_concatenado)
 
 
 """
@@ -76,11 +77,12 @@ Restricción: Utilizar desempaquetado con comodines
 
 tupla = (73, 45, 344, 3434, 2)
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+a, *reset = tupla
+primer = a
 
 assert primer == 73
+
+print (primer)
 
 
 """
@@ -90,11 +92,11 @@ Restricción: Utilizar desempaquetado con comodines
 
 lista = [73, 45, 344, 3434, 2]
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
-
+a, *reset, b = lista 
+suma = a + b
 assert suma == 75
+
+print (suma)
 
 
 """
@@ -105,8 +107,9 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+a,b,c,d,e,*rest = tupla
+string_concatenado = f'{a} {b} {c} {d} {e}'
 
 assert string_concatenado == "anoche fui a la fiesta"
+
+print (string_concatenado)

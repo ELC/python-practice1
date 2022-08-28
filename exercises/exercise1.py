@@ -8,12 +8,12 @@ Restricción: Usar el operador de multiplicación
 
 lado_cuadrado = 5
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+area_cuadrado = lado_cuadrado * lado_cuadrado
 
 assert area_cuadrado == 25
 
+print ("El area al cuadrado es:")
+print (area_cuadrado)
 
 """
 Re-Escribir usando el operador de potencia.
@@ -21,11 +21,13 @@ Re-Escribir usando el operador de potencia.
 
 lado_cuadrado = 5
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
-
+area_cuadrado = lado_cuadrado**2
 assert area_cuadrado == 25
+
+print ("El area al cuadrado es:")
+print (area_cuadrado)
+
+
 
 
 """
@@ -34,11 +36,12 @@ Re-Escribir usando la función pow.
 
 lado_cuadrado = 5
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
-
+area_cuadrado = pow(5,2)
 assert area_cuadrado == 25
+
+print ("El area al cuadrado es:")
+print (area_cuadrado)
+
 
 
 """
@@ -49,12 +52,11 @@ Restricción: Usar el operador de división entera.
 precio = 3.74
 presupuesto_disponible = 10
 
-# COMPLETAR - INICIO
-
-# COMPLETAR - FIN
+cantidad_a_comprar= presupuesto_disponible // precio
 
 assert cantidad_a_comprar == 2
-
+print("La cantidad a comprar es: ")
+print(cantidad_a_comprar)
 
 """
 Determinar si el número de la variable es divisible por 7.
@@ -63,8 +65,7 @@ Restricción: Usar el operador módulo.
 
 numero_incalculable = 2 ** 54 - 1
 
-# COMPLETAR - INICIO
+es_divisible_por_siete = numero_incalculable % 7
 
-# COMPLETAR - FIN
-
-assert es_divisible_por_siete
+assert es_divisible_por_siete == 0
+print("El numero es divisible")
