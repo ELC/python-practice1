@@ -10,7 +10,7 @@ esta_lloviendo = True
 riego_activado = True
 
 # COMPLETAR - INICIO
-
+piso_mojado = esta_lloviendo or riego_activado
 # COMPLETAR - FIN
 
 assert piso_mojado
@@ -25,6 +25,7 @@ Restricción: Usar NOT.
 lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
+area_mayor_a_cinco = area_cuadrado>5 and not lado_cuadrado != 5
 # COMPLETAR - INICIO
 
 # COMPLETAR - FIN
@@ -40,11 +41,13 @@ True si el número 1 es divisible por 7 y al mismo tiempo el número 2 no lo es.
 numero_1 = 49
 numero_2 = 50
 
+resultado = numero_1%7 == 0 and numero_2%7 != 0
 # COMPLETAR - INICIO
 
 # COMPLETAR - FIN
 
 assert resultado
+
 
 
 """
@@ -60,7 +63,7 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-
+resultado =variable_03 or not variable_01 or variable_02 or not variable_05
 # COMPLETAR - FIN
 
 assert resultado == 80
