@@ -5,12 +5,17 @@
 Convertir los numeros de string a enteros y luego sumarlos.
 """
 
+
+from pickletools import int4
 numero_01 = "123"
 numero_02 = "456"
 numero_03 = "789"
 numero_04 = "132"
 
 # COMPLETAR - INICIO
+
+suma_de_numeros = int(numero_01) + int(numero_02) + \
+    int(numero_03) + int(numero_04)
 
 # COMPLETAR - FIN
 
@@ -26,7 +31,8 @@ numero_02 = 456
 numero_03 = 789
 
 # COMPLETAR - INICIO
-
+suma_de_numeros_string = str(numero_01) + "" + \
+    str(numero_02) + "" + str(numero_03)
 # COMPLETAR - FIN
 
 assert suma_de_numeros_string == "123456789"
@@ -42,7 +48,9 @@ numero_octal = "0o1425"
 numero_hexadecimal = "0x6f540"
 
 # COMPLETAR - INICIO
+int(numero_binario, numero_hexadecimal, numero_octal)
 
+multiplicacion_de_numeros = numero_binario * numero_octal * numero_hexadecimal
 # COMPLETAR - FIN
 
 assert multiplicacion_de_numeros == 44397345600000000
@@ -59,6 +67,13 @@ numero_03 = "0o1234"
 numero_04 = 654
 
 # COMPLETAR - INICIO
+numero_01 = int("987")
+numero_02 = int("0x6f54F", 16)
+numero_03 = int("0o1234", 8)
+numero_04 = 654
+
+resultado_resta = numero_01 - numero_02 - numero_03 - numero_04
+
 
 # COMPLETAR - FIN
 
