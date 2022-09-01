@@ -6,9 +6,14 @@ A partir de ls siguiente lista instanciar una tupla que contenga todos sus valor
 y en el mismo orden.
 """
 
+import string
+
+
 lista = ["casa", "perro", "pato", "gato"]
 
 # COMPLETAR - INICIO
+
+tupla = tuple(lista)
 
 # COMPLETAR - FIN
 
@@ -24,6 +29,8 @@ tupla = "casa", "perro", "pato", "gato", "tenedor"
 
 # COMPLETAR - INICIO
 
+lista = list(tupla)
+
 # COMPLETAR - FIN
 
 assert lista == ["casa", "perro", "pato", "gato", "tenedor"]
@@ -37,6 +44,8 @@ tupla = ("primer", 25, [1, 2, 3])
 
 # COMPLETAR - INICIO
 
+a, b, c = tupla
+
 # COMPLETAR - FIN
 
 assert a == "primer" and b == 25 and c == [1, 2, 3]
@@ -49,6 +58,9 @@ Desempaquetar la siguiente tupla y luego sumar sus valores
 tupla = (87, 98, 35, 67, 4, 9)
 
 # COMPLETAR - INICIO
+
+num1, num2, num3, num4, num5, num6 = tupla
+total = num1 + num2 + num3 + num4 + num5 + num6
 
 # COMPLETAR - FIN
 
@@ -64,6 +76,9 @@ lista = ["esta", "mañana", "sali", "a", "correr"]
 
 # COMPLETAR - INICIO
 
+word1, word2, word3, word4, word5 = lista
+string_concatenado = f"{word1} {word2} {word3} {word4} {word5}"
+
 # COMPLETAR - FIN
 
 assert string_concatenado == "esta mañana sali a correr"
@@ -77,6 +92,8 @@ Restricción: Utilizar desempaquetado con comodines
 tupla = (73, 45, 344, 3434, 2)
 
 # COMPLETAR - INICIO
+
+primer, *rest = tupla
 
 # COMPLETAR - FIN
 
@@ -92,6 +109,9 @@ lista = [73, 45, 344, 3434, 2]
 
 # COMPLETAR - INICIO
 
+num1, *rest, num2 = tupla
+suma = num1 + num2
+
 # COMPLETAR - FIN
 
 assert suma == 75
@@ -106,6 +126,9 @@ Restricción: Utilizar desempaquetado con comodines y f-Strings
 tupla = ("anoche", "fui", "a", "la", "fiesta", "pero", "no", "pude", "entrar")
 
 # COMPLETAR - INICIO
+
+word1, word2, word3, word4, word5, *rest = tupla
+string_concatenado = f"{word1} {word2} {word3} {word4} {word5}"
 
 # COMPLETAR - FIN
 
